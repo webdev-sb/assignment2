@@ -8,6 +8,8 @@ function App() {
 
   return (
     <>
+
+      {/* Navbar  */}
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
@@ -27,20 +29,91 @@ function App() {
           </div>
           <a className="btn btn-ghost text-xl">CS - Ticket System</a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>FAQ</a></li>
-            <li><a>ChangeLog</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Download</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-        </div>
+
         <div className="navbar-end">
-          <a className="btn">New Ticket</a>
+          <div className="navbar-center hidden lg:flex">
+            <ul className="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>FAQ</a></li>
+              <li><a>ChangeLog</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Download</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a className="btn text-white h-14 bg-linear-to-bl from-violet-500 to-fuchsia-500">+  New Ticket</a>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+      {/* Banner  */}
+
+      <div className='p-5 m-5 flex items-center justify-center'>
+        <div className="card bg-base-100 w-96 shadow-sm m-5 flex items-center justify-center p-5  ">
+          <div className="card-body">
+            <h2 className="card-title">In-Progess</h2>
+          </div>
+          <div>
+            <span className=''>0</span>
+          </div>
+        </div>
+
+        <div className="card bg-base-100 w-96 shadow-sm m-5 flex items-center justify-center p-5">
+          <div className="card-body">
+            <h2 className="card-title">Resolved</h2>
+          </div>
+          <div>
+            <span className=''>0</span>
+          </div>
+        </div>
+      </div>
+
+
+      {/* Customer Ticket Section */}
+      <div>
+        <h1>Customer Tickets</h1>
+
+      </div>
+
+
+
+
+
+
+
+
+      {/* Footer  */}
+      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+        <nav>
+          <h6 className="footer-title">Services</h6>
+          <a className="link link-hover">Branding</a>
+          <a className="link link-hover">Design</a>
+          <a className="link link-hover">Marketing</a>
+          <a className="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Company</h6>
+          <a className="link link-hover">About us</a>
+          <a className="link link-hover">Contact</a>
+          <a className="link link-hover">Jobs</a>
+          <a className="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 className="footer-title">Legal</h6>
+          <a className="link link-hover">Terms of use</a>
+          <a className="link link-hover">Privacy policy</a>
+          <a className="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
+
     </>
   )
 }
